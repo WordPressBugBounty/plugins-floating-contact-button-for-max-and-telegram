@@ -84,6 +84,13 @@ function max_button_render_settings() {
                 )
             );
 
+            $locale = get_locale();
+            $is_ru  = ( strpos( $locale, 'ru_' ) === 0 );
+
+            $pro_url = $is_ru
+                ? 'https://cryptolamer.ru/airtheme-contact-button-pro/'
+                : 'https://cryptolamer.ru/airtheme-contact-button-pro-eng/';
+
             $cards = apply_filters(
                 'max_button_admin_cards',
                 array(
@@ -166,7 +173,7 @@ function max_button_render_settings() {
                         <details open>
         <summary>' . esc_html__( 'Add Any Custom Button (PRO)', 'floating-contact-button-for-max-and-telegram' ) . '</summary>
         <div class="max-button-card-content">
-            <a href="https://cryptolamer.ru/airtheme-contact-button-pro/"
+             <a href="' . esc_url( $pro_url ) . '"
                target="_blank"
                rel="noopener noreferrer">
                 ' . esc_html__( 'Add your buttons now →', 'floating-contact-button-for-max-and-telegram' ) . '
@@ -387,4 +394,3 @@ function max_button_sanitize_settings( $input ) {
 
     return $output;
 }
-

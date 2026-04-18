@@ -5,7 +5,7 @@ Tags: telegram, whatsapp, facebook messenger, contact button, floating button
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 7.0
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,9 @@ Possibly in future updates. The plugin is actively maintained.
 3. Expanded contact menu with multiple messengers
 
 == Changelog ==
+
+= 1.1.6 =
+* Updated contact button Pro links
 
 = 1.1.5 =
 * Updated plugin name for better search visibility

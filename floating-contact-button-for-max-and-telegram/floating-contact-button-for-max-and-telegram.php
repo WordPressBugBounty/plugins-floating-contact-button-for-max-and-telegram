@@ -3,7 +3,7 @@
  * Plugin Name: Floating Contact Button – Telegram, WhatsApp, Messenger and MAX
  * Plugin URI:  https://cryptolamer.ru/support_wp_plugin-floating-contact-button-for-max-telegram/
  * Description: Floating Contact Button (Telegram, WhatsApp, Facebook Messenger, MAX). From Russia with love.
- * Version:     1.1.5
+ * Version:     1.1.6
  * Author:      alexwp12
  * License:     GPLv2 or later
  * Text Domain: floating-contact-button-for-max-and-telegram
@@ -62,8 +62,15 @@ add_filter(
         // Link to WP.org reviews
         $rating_link = '<a href="https://wordpress.org/support/plugin/floating-contact-button-for-max-and-telegram/reviews/" target="_blank" rel="noopener noreferrer">Plugin Rating</a>';
 
+        $locale = get_locale();
+        $is_ru  = ( strpos( $locale, 'ru_' ) === 0 );
+
+        $pro_url = $is_ru
+            ? 'https://cryptolamer.ru/airtheme-contact-button-pro/'
+            : 'https://cryptolamer.ru/airtheme-contact-button-pro-eng/';
+
         // Link to PRO addon
-        $pro_link = '<a href="https://cryptolamer.ru/airtheme-contact-button-pro/" target="_blank" rel="noopener noreferrer">Contact Button PRO</a>';
+        $pro_link = '<a href="' . esc_url( $pro_url ) . '" target="_blank" rel="noopener noreferrer">Contact Button PRO</a>';
 
         $links[] = $rating_link;
         $links[] = $pro_link;
