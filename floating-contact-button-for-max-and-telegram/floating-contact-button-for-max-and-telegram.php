@@ -3,7 +3,7 @@
  * Plugin Name: Floating Contact Button for MAX and Telegram
  * Plugin URI:  https://cryptolamer.ru/support_wp_plugin-floating-contact-button-for-max-telegram/
  * Description: Floating Contact Button (Telegram, WhatsApp, Facebook Messenger, MAX). From Russia with love.
- * Version:     1.1.3
+ * Version:     1.1.4
  * Author:      alexwp12
  * License:     GPLv2 or later
  * Text Domain: floating-contact-button-for-max-and-telegram
