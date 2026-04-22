@@ -189,6 +189,7 @@ function max_button_render_settings() {
                 <?php
                 foreach ( $order as $key ) {
                     if ( isset( $cards[ $key ] ) ) {
+                        // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Card HTML is composed from trusted plugin callbacks.
                         echo $cards[ $key ];
                     }
                 }

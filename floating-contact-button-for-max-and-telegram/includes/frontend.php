@@ -62,10 +62,9 @@ if (!$show_desktop && $show_mobile) {
     $classes[] = 'max-hide-all';
 }
 
-$class_attr = '';
-
-if (!empty($classes)) {
-    $class_attr = ' ' . implode(' ', $classes);
+$wrapper_class = 'max-button-scope';
+if ( ! empty( $classes ) ) {
+    $wrapper_class .= ' ' . implode( ' ', $classes );
 }
 
 // ----------------------
@@ -84,9 +83,6 @@ if ( ! empty( $options['offset_right'] ) ) {
 if ( ! empty( $options['offset_bottom'] ) ) {
     $style .= 'bottom:' . intval( $options['offset_bottom'] ) . 'px;';
 }
-
-$style_attr = $style ? ' style="' . esc_attr( $style ) . '"' : '';
-
 
 // ————————————————
 // We check if there is at least one active button
@@ -110,7 +106,11 @@ if ( ! $has_any ) {
 // ————————————————
 // Start of container
 // ————————————————
-echo '<div id="max-button-wrapper" class="max-button-scope' . $class_attr . '"' . $style_attr . '>';
+echo '<div id="max-button-wrapper" class="' . esc_attr( $wrapper_class ) . '"';
+if ( $style ) {
+    echo ' style="' . esc_attr( $style ) . '"';
+}
+echo '>';
 
 // ————————————————
 // Common column (SINGLE flex + gap)
@@ -201,4 +201,3 @@ echo '</div>'; // end of max-button-column
 echo '</div>'; // end of wrapper
 }
 add_action( 'wp_footer', 'max_button_footer_render', 99 );
-
