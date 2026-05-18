@@ -106,6 +106,8 @@ if ( ! $has_any ) {
 // ————————————————
 // Start of container
 // ————————————————
+echo "\n<!-- Wordpress plugin: Floating Contact Button for MAX and Telegram -->\n";
+
 echo '<div id="max-button-wrapper" class="' . esc_attr( $wrapper_class ) . '"';
 if ( $style ) {
     echo ' style="' . esc_attr( $style ) . '"';
