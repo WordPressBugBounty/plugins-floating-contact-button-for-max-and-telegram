@@ -1,11 +1,11 @@
 === Floating Contact Button for MAX and Telegram ===
 Contributors: alexwp12
-Donate link: https://cryptolamer.ru/support_wp_plugin-floating-contact-button-for-max-and-telegram/
+Donate link: https://cryptolamer.ru/support-the-plugin-floating-contact-button-for-max-and-telegram-eng/
 Tags: telegram, whatsapp, facebook messenger, contact button, floating button
 Requires at least: 5.0
 Tested up to: 7.0
 Requires PHP: 7.0
-Stable tag: 1.1.10
+Stable tag: 1.1.11
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ This plugin is an independent project developed by the author and is not affilia
 
 == Live Demo ==
 
-https://cryptolamer.ru/support_wp_plugin-floating-contact-button-for-max-and-telegram/
+https://cryptolamer.ru/support-the-plugin-floating-contact-button-for-max-and-telegram-eng/
 
 == Key Features ==
 
@@ -78,6 +78,10 @@ Possibly in future updates. The plugin is actively maintained.
 3. Expanded contact menu with multiple messengers
 
 == Changelog ==
+
+= 1.1.11 =
+* Updated demo and support links in plugin metadata.
+* No functional changes.
 
 = 1.1.10 =
 * Compatibility update: tested up to WordPress 7.0.
