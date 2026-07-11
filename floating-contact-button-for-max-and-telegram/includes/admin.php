@@ -107,7 +107,8 @@ function max_button_render_settings() {
                                 <p>
                                     <input type="text" class="regular-text"
                                            name="max_button_settings[telegram_link]"
-                                           value="' . esc_attr( $options['telegram_link'] ?? '' ) . '" />
+                                           value="' . esc_attr( $options['telegram_link'] ?? '' ) . '"
+                                           placeholder="https://t.me/username" />
                                 </p>
                             </div>
                         </details>
@@ -125,7 +126,8 @@ function max_button_render_settings() {
                                 <p>
                                     <input type="text" class="regular-text"
                                            name="max_button_settings[whatsapp_link]"
-                                           value="' . esc_attr( $options['whatsapp_link'] ?? '' ) . '" />
+                                           value="' . esc_attr( $options['whatsapp_link'] ?? '' ) . '"
+                                           placeholder="https://wa.me/1234567890" />
                                 </p>
                             </div>
                         </details>
@@ -162,7 +164,8 @@ function max_button_render_settings() {
                                 <p>
                                     <input type="text" class="regular-text"
                                            name="max_button_settings[max_link]"
-                                           value="' . esc_attr( $options['max_link'] ?? '' ) . '" />
+                                           value="' . esc_attr( $options['max_link'] ?? '' ) . '"
+                                           placeholder="' . esc_attr__( 'Copy the link from your MAX profile: Share with friends', 'floating-contact-button-for-max-and-telegram' ) . '" />
                                 </p>
                             </div>
                         </details>
