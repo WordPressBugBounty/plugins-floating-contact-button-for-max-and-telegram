@@ -3,9 +3,9 @@ Contributors: alexwp12
 Donate link: https://cryptolamer.ru/support-the-plugin-floating-contact-button-for-max-and-telegram-eng/
 Tags: telegram, whatsapp, facebook messenger, contact button, floating button
 Requires at least: 5.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.0
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,11 @@ Possibly in future updates. The plugin is actively maintained.
 3. Expanded contact menu with multiple messengers
 
 == Changelog ==
+
+= 1.2.1 =
+* Fixed conflicting Top and Bottom position styles that could move the button to the top of the page.
+* Clarified button position fields in the settings page.
+* Tested up to WordPress 7.1.
 
 = 1.2.0 =
 * Added helpful link placeholders for messenger settings.

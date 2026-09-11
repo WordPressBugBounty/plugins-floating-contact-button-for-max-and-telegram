@@ -242,9 +242,13 @@ function max_button_render_settings() {
 
             <h2><?php esc_html_e( 'Button position (px)', 'floating-contact-button-for-max-and-telegram' ); ?></h2>
 
+            <p class="description">
+                <?php esc_html_e( 'Use either Top or Bottom. Top places the button from the upper edge; for the usual bottom-right position, leave Top empty and set Bottom.', 'floating-contact-button-for-max-and-telegram' ); ?>
+            </p>
+
             <p>
                 <label>
-                    <?php esc_html_e( 'Top', 'floating-contact-button-for-max-and-telegram' ); ?>:
+                    <?php esc_html_e( 'Distance from top', 'floating-contact-button-for-max-and-telegram' ); ?>:
                     <input type="number"
                            name="max_button_settings[offset_top]"
                            value="<?php echo esc_attr( $options['offset_top'] ?? '' ); ?>" />
@@ -253,7 +257,7 @@ function max_button_render_settings() {
 
             <p>
                 <label>
-                    <?php esc_html_e( 'Right', 'floating-contact-button-for-max-and-telegram' ); ?>:
+                    <?php esc_html_e( 'Distance from right', 'floating-contact-button-for-max-and-telegram' ); ?>:
                     <input type="number"
                            name="max_button_settings[offset_right]"
                            value="<?php echo esc_attr( $options['offset_right'] ?? '' ); ?>" />
@@ -262,7 +266,7 @@ function max_button_render_settings() {
 
             <p>
                 <label>
-                    <?php esc_html_e( 'Bottom', 'floating-contact-button-for-max-and-telegram' ); ?>:
+                    <?php esc_html_e( 'Distance from bottom', 'floating-contact-button-for-max-and-telegram' ); ?>:
                     <input type="number"
                            name="max_button_settings[offset_bottom]"
                            value="<?php echo esc_attr( $options['offset_bottom'] ?? '' ); ?>" />

@@ -72,15 +72,14 @@ if ( ! empty( $classes ) ) {
 // ----------------------
 $style = '';
 
-if ( ! empty( $options['offset_top'] ) ) {
-    $style .= 'top:' . intval( $options['offset_top'] ) . 'px;';
-}
-
 if ( ! empty( $options['offset_right'] ) ) {
     $style .= 'right:' . intval( $options['offset_right'] ) . 'px;';
 }
 
-if ( ! empty( $options['offset_bottom'] ) ) {
+if ( ! empty( $options['offset_top'] ) ) {
+    // A fixed element must use one vertical anchor to avoid stretching between top and bottom.
+    $style .= 'top:' . intval( $options['offset_top'] ) . 'px;bottom:auto;';
+} elseif ( ! empty( $options['offset_bottom'] ) ) {
     $style .= 'bottom:' . intval( $options['offset_bottom'] ) . 'px;';
 }
 
